@@ -33,7 +33,7 @@ const Top_contact = () => {
                 ))}
             </div>
             <div className="login flex_prop ml20">
-                <FaRegUser />
+                <FaRegUser className='icons' />
                 <span>Login</span>
             </div><hr />
             <span>

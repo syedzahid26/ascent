@@ -1,12 +1,16 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Top_contact from '../../components/Top_contact'
+import HeroSec from '../../components/HeroSec'
+import Courses from '../../components/Courses'
+import Achievement from '../../components/Achievement'
+
+
 
 const page = () => {
   return (
-    <div className='home_page'>
-      <Top_contact />
-      <Navbar />
+    <div className='home_page roboto'>
+      <HeroSec />
+      <Courses />
+      <Achievement />
     </div>
   )
 }
