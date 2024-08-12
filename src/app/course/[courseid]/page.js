@@ -9,10 +9,12 @@ import { GrAnnounce } from "react-icons/gr";
 import { PiCertificate } from "react-icons/pi";
 
 const courses_items = [
-    { id: 0, head: "WEB DESIGNING", slogan: "Design Your Web", duration: "6 Months", img: "/images/webdesining_course.jpg", desc: "Our Web Designing course is specially designed with lots of useful technologies. This course period is of 1 year. Indian Computer Institute has been providing Web Designing courses packaged with scripting languages, designing tools and publishing tools.", bgcolor: "#8430E5" },
-    { id: 1, head: "E Accounting", slogan: "Design Your Ideas", duration: "6 Months", img: "/images/accoutingCourse.jpg", desc: "E-Accounting Course covers accounting software and systems to manage financial transactions efficiently. It is ideal for those in accounting, finance, or taxation.", bgcolor: "#1148D6" },
-    { id: 2, head: "Diploma in Computer APPlication", slogan: "Get introduced to computer", duration: "6 Months", img: "/images/dca_course.jpg", desc: "The course is intended to provide learners with basic, realistic and technological details pertaining to programming tools and applications which are used in our everyday lives. An intermediate or 12th class in any stream from a recognized board or university is the required qualification needed for this program.", bgcolor: "#177C65" },
-    { id: 3, head: "O Level", img: "/images/olevel.png", slogan: "Design Your Ideas", duration: "6 Months", desc: "The course is designed to give students basic, realistic, and technological details about programming tools and applications they use every day.", bgcolor: "#E948AE" }
+    { id: 0, head: "WEB DESIGNING", slogan: "Design Your Web", duration: "6 Months", img: "/images/webdesining_course.jpg", desc: "Our Web Designing course is specially designed with lots of useful technologies. This course period is of 1 year. Indian Computer Institute has been providing Web Designing courses packaged with scripting languages, designing tools and publishing tools.", lectures: " 100 " },
+    {
+        id: 1, head: "Tally Prime", slogan: "Learn Accounting Process, Create Sale & Purchase Invoice with GST.", duration: "3 Months", img: "/images/accoutingCourse.jpg", desc: "This Tally Prime course is for those students who want to go into account field in their future.In Accounts field we learn to create vouchers for sale, purchase, sale return and purchase return and there are many more topics that you will learn in Tally ERP 9 and Accounts.And if you are a student of commerce background then you can learn Tally Prime very easily", lectures: " 60 ",
+    },
+    { id: 2, head: "Diploma in Computer APPlication", slogan: "Get introduced to computer", duration: "6 Months", lectures: " 40 ", img: "/images/dca_course.jpg", desc: "The course is intended to provide learners with basic, realistic and technological details pertaining to programming tools and applications which are used in our everyday lives. An intermediate or 12th class in any stream from a recognized board or university is the required qualification needed for this program." },
+    { id: 3, head: "O Level", img: "/images/olevel.png", slogan: "Design Your Ideas", duration: "1 year", desc: "The course is designed to give students basic, realistic, and technological details about programming tools and applications they use every day.", lectures: " 180 ", }
 ];
 
 const CoursePage = () => {
@@ -64,10 +66,10 @@ const CoursePage = () => {
                 </div>
                 <div className="right">
                     <div className="additional_detials">
-                        <MdAccessAlarm className='bookmark_icon' /> <div className="text">Duration:{course.duration}</div>
+                        <MdAccessAlarm className='bookmark_icon' /> <div className="text">Duration: {course.duration}</div>
                     </div>
                     <div className="additional_detials">
-                        <GrAnnounce className='bookmark_icon' /> <div className="text">Lectures:  60</div>
+                        <GrAnnounce className='bookmark_icon' /> <div className="text">Lectures: {course.lectures}</div>
                     </div> <div className="additional_detials">
                         <PiCertificate className='bookmark_icon' /> <div className="text">Certificate of Completion</div>
                     </div>

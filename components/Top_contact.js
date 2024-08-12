@@ -34,11 +34,9 @@ const Top_contact = () => {
             </div>
             <div className="login flex_prop ml20">
                 <FaRegUser className='icons' />
-                <span>Login</span>
+                <Link className='link' href="\login">Login</Link>
             </div><hr />
-            <span>
-                Register
-            </span>
+            <Link className='link' href="\createaccount">Register</Link>
         </div>
     );
 };

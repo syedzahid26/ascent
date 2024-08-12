@@ -30,3 +30,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+// To run the project use: npm run dev
